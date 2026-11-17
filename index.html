@@ -695,7 +695,7 @@ html[data-theme="dark"] #inviteBtn .mvs.vs{color:#ff4d57}
 <meta property="og:image:width" content="512"><meta property="og:image:height" content="512">
 <meta property="og:url" content="https://almotawa80.github.io/60sec/">
 <meta name="twitter:card" content="summary">
-<meta name="app-version" content="202611172210">
+<meta name="app-version" content="202611172215">
 <meta name="theme-color" content="#ffffff">
 </head>
 <body>
@@ -711,7 +711,7 @@ html[data-theme="dark"] #inviteBtn .mvs.vs{color:#ff4d57}
         <svg class="mark" viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" aria-hidden="true">
           <circle cx="24" cy="27" r="16"/><path d="M24 27V17M19 6h10M24 6v5M38 12l-3 3"/>
         </svg>
-        <div class="ttl"><h1>تحدّي الدقيقة</h1><span class="greet" id="greet">سليمان</span></div>
+        <div class="ttl"><h1>تحدّي الدقيقة</h1><span class="greet" id="greet">عروك</span></div>
         <span class="pfhold"><button class="pfbtn" id="pfBtn" aria-label="ملفي"><span class="pfav" id="pfAv"></span></button></span>
       </div>
     </div>
@@ -2349,7 +2349,7 @@ function splitName(s){ s=String(s||'').replace(/\s+/g,' ').trim(); if(!s) return
   const m=s.match(/^([^،,]+)[،,]\s*(.+)$/); if(m) return {t:m[1].trim(),n:m[2].trim()};
   const w=s.split(' '); if(w.length>=2 && /^بو\S{2,}$/.test(w[0])) return {t:w[0],n:w.slice(1).join(' ')};
   return {t:s,n:''}; }
-function renderGreet(){ const g=$('greet'); g.innerHTML='<b class="gt">سليمان</b>'; }
+function renderGreet(){ const g=$('greet'); g.innerHTML='<b class="gt">عروك</b>'; }
 $('greet').onclick = ()=>askName(()=>{ closeModal(); renderGreet(); });
 renderGreet();
 $('meAv').innerHTML = svg('user',44);
